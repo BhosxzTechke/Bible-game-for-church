@@ -40,6 +40,8 @@ export default function BibleJeopardy() {
   const [team1Score, setTeam1Score] = useState(0);
   const [team2Score, setTeam2Score] = useState(0);
 
+
+  
   const handleSelect = (catIndex, qIndex) => {
     if (!data[catIndex].questions[qIndex].answered) {
       setSelected({ catIndex, qIndex });
